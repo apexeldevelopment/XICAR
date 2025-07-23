@@ -1,0 +1,16 @@
+[12-Mar-2024 00:40:04 UTC] PHP Fatal error:  Uncaught Error: Class "Broadcast" not found in /home/msprojectsappori/public_html/multi-service-v3/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/routes/channels.php on line 14
+[12-Mar-2024 00:46:05 UTC] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/msprojectsappori/public_html/multi-service-v3/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/routes/api.php on line 9
+[14-Mar-2024 02:41:54 UTC] PHP Fatal error:  Uncaught Error: Class "Route" not found in /home/msprojectsappori/public_html/multi-service-v3/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/routes/api.php on line 9
+[14-Mar-2024 04:21:01 UTC] PHP Fatal error:  Uncaught Error: Class "Broadcast" not found in /home/msprojectsappori/public_html/multi-service-v3/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/routes/channels.php on line 14

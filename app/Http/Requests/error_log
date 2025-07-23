@@ -1,0 +1,24 @@
+[20-Mar-2024 18:07:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/ManualDispatch.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/ManualDispatch.php on line 7
+[23-Mar-2024 22:50:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/UserRequest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/UserRequest.php on line 9
+[28-Mar-2024 20:56:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/JobVacancyRequest.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/JobVacancyRequest.php on line 10
+[04-Apr-2024 23:56:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/HotelRequest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/HotelRequest.php on line 9
+[12-Apr-2024 09:14:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/PromoCodeRequest.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/PromoCodeRequest.php on line 10
+[24-Apr-2024 12:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/FranchiseUserRequest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Http/Requests/FranchiseUserRequest.php on line 9

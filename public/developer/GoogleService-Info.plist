@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>828117261410-q8kp8fnlgi1tm9anic72pe83nv8qh4f7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.828117261410-q8kp8fnlgi1tm9anic72pe83nv8qh4f7</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>828117261410-4lffhkg5uiuslpfv9oqa0iqr71tt05io.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2jD3xzQmbJAVsdek82hadYXDVGmPeQNY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>828117261410</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rapidride.driver</string>
+	<key>PROJECT_ID</key>
+	<string>rapidride-3a3e4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rapidride-3a3e4.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:828117261410:ios:ed14ff1e09c5d15e85c53b</string>
+</dict>
+</plist>

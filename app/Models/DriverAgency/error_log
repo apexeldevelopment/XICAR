@@ -1,0 +1,4 @@
+[03-May-2024 09:37:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverAgency/DriverAgencyWalletTransaction.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverAgency/DriverAgencyWalletTransaction.php on line 7

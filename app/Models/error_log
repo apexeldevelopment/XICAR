@@ -1,0 +1,48 @@
+[03-Mar-2024 04:17:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverCashout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverCashout.php on line 7
+[26-Mar-2024 06:33:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/EmployeeDesignation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/EmployeeDesignation.php on line 7
+[28-Mar-2024 04:43:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverGallery.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverGallery.php on line 7
+[28-Mar-2024 04:43:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/HandymanBookingCart.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/HandymanBookingCart.php on line 8
+[28-Mar-2024 06:13:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/LanguageQuestion.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/LanguageQuestion.php on line 7
+[28-Mar-2024 07:43:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/FavouriteDriver.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/FavouriteDriver.php on line 7
+[06-Apr-2024 06:31:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingTransaction.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingTransaction.php on line 8
+[10-Apr-2024 14:20:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingRequestDriver.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingRequestDriver.php on line 7
+[13-Apr-2024 10:19:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/LanguageCmsPage.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/LanguageCmsPage.php on line 7
+[15-Apr-2024 10:20:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/OneSignalLog.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/OneSignalLog.php on line 7
+[18-Apr-2024 10:36:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingPackage.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/BookingPackage.php on line 7
+[07-May-2024 02:47:07 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverOnlineTime.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Models/DriverOnlineTime.php on line 7

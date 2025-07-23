@@ -1,0 +1,23 @@
+{
+"applinks": {
+    "apps": [ ],
+    "details": [
+        {
+            "appID": "8XBA5CDB47.com.ciao.user",
+            "paths": [ "*", "/" ]
+        },
+        {
+            "appID": "8XBA5CDB47.com.ciao.driver",
+            "paths": [ "*", "/"]
+        },
+        {
+            "appID": "JDJKMU6MUJ.com.sturen.user",
+            "paths": [ "*", "/"]
+        },
+        {
+            "appID": "JDJKMU6MUJ.com.sturen.driver",
+            "paths": [ "*", "/"]
+        }
+    ]
+}
+}

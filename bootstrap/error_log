@@ -1,0 +1,4 @@
+[06-May-2024 23:39:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/msprojectsappori/public_html/multi-service-v3/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/bootstrap/app.php on line 14

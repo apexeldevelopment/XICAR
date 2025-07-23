@@ -1,0 +1,2 @@
+[04-Mar-2024 23:07:02 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Bus\Dispatchable" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Jobs/UserSignupEmailOtpJob.php on line 12
+[11-Mar-2024 23:16:04 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Bus\Dispatchable" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Jobs/UserSignupEmailOtpJob.php on line 12

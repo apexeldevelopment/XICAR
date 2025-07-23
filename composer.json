@@ -1,0 +1,118 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "repositories": [
+        {
+          "type": "package",
+          "package": {
+            "name": "paygate/payhost-helper",
+            "version": "1.0.2",
+            "type": "package",
+            "dist": {
+              "url": "https://github.com/PayGate/PayHost/archive/refs/tags/1.0.2.zip",
+              "type": "zip"
+            }
+          }
+        }
+  ],
+    "require": {
+        "php": "^8.1",
+        "ext-gd": "*",
+        "ext-soap": "*",
+        "africastalking/africastalking": "*",
+        "aws/aws-sdk-php-laravel": "*",
+        "barryvdh/laravel-dompdf": "*",
+        "braintree/braintree_php": "*",
+        "cellulant/checkout_encryption": "dev-master",
+        "doctrine/dbal": "2.13.1",
+        "fideloper/proxy": "*",
+        "giggsey/libphonenumber-for-php": "*",
+        "hisorange/browser-detect": "*",
+        "intervention/image": "^2",
+        "iugu/iugu": "*",
+        "laravel/framework": "^9.0",
+        "laravel/helpers": "*",
+        "laravel/passport": "*",
+        "laravel/telescope": "*",
+        "laravel/tinker": "*",
+        "laravel/ui": "*",
+        "laravelcollective/html": "*",
+        "lcobucci/jwt": "*",
+        "league/flysystem-aws-s3-v3": "*",
+        "maatwebsite/excel": "*",
+        "mane-olawale/termii": "*",
+        "nexmo/client": "*",
+        "paygate/payhost-helper": "*",
+        "paypayopa/php-sdk": "*",
+        "phpmailer/phpmailer": "*",
+        "phpoffice/phpspreadsheet": "*",
+        "phpseclib/phpseclib": "*",
+        "plivo/plivo-php": "*",
+        "predis/predis": "*",
+        "rap2hpoutre/laravel-log-viewer": "*",
+        "spatie/laravel-permission": "*",
+        "stichoza/google-translate-php": "*",
+        "stripe/stripe-php": "*",
+        "telesign/telesign": "*",
+        "twilio/sdk": "*"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.9",
+        "fakerphp/faker": "*",
+        "filp/whoops": "*",
+        "mockery/mockery": "*",
+        "nunomaduro/collision": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers/common-helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": ["laravel/telescope"]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform-check": false,
+      "allow-plugins": {
+        "composer/package-versions-deprecated": true
+      }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

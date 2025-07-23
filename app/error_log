@@ -1,0 +1,4 @@
+[03-Apr-2024 10:47:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Driver.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Driver.php on line 10

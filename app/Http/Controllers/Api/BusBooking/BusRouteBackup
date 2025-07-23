@@ -1,0 +1,156 @@
+//    /**
+//     * get available routes by pickup & drop location
+//     */
+//    public function getRoutes(Request $request)
+//    {
+//        $validator = Validator::make($request->all(), [
+//            "latitude" => 'required|string',
+//            "longitude" => 'required|string',
+//            "drop_latitude" => 'required|string',
+//            "drop_longitude" => 'required|string',
+//        ]);
+//        if ($validator->fails()) {
+//            $errors = $validator->messages()->all();
+//            return $this->failedResponse($errors[0]);
+//        }
+//        $user = $request->user('api');
+//        $merchant = $user->Merchant;
+//        $merchant_id = $merchant->id;
+//        $string_file = $this->getStringFile($merchant_id);
+//        try {
+//            $route = new BusRoute;
+//            $arr_available_routes = $this->routeResponse($route->getNearestRoute($request, $user));
+//        } catch (\Throwable $th) {
+//            return $this->failedResponse($th->getMessage());
+//        }
+//        return $this->successResponse(trans("$string_file.data_found"), $arr_available_routes);
+//    }
+
+//    public function routeResponse($data)
+//    {
+//        if ($data) {
+//            $return_data = $data->map(function ($route) {
+//                return  [
+//                    'route_id' => $route->id,
+//                    'pickup_point_id' => $route->start_point,
+//                    'drop_point_id' => $route->end_point,
+//                    'route_title' => isset($route->LanguageBusRoute[0]) ? $route->LanguageBusRoute[0]->title : "",
+//                    'pickup_stop_point' => $route->StartPoint->LanguageAny->name,
+//                    'drop_stop_point' => $route->EndPoint->LanguageAny->name,
+//                    'time_range' => "5am-10pm",
+//                    'number_of_buses' => 3,
+//                ];
+//            });
+//            return $return_data;
+//        }
+//    }
+
+
+//    public function getRouteDetails(Request $request)
+//    {
+//        $validator = Validator::make($request->all(), [
+//            "route_id" => 'required|integer',
+//            "latitude" => 'required|string',
+//            "longitude" => 'required|string',
+//            "drop_latitude" => 'required|string',
+//            "drop_longitude" => 'required|string',
+//        ]);
+//        if ($validator->fails()) {
+//            $errors = $validator->messages()->all();
+//            return $this->failedResponse($errors[0]);
+//        }
+//        $user = $request->user('api');
+//        $merchant = $user->Merchant;
+//        $merchant_id = $merchant->id;
+//        $string_file = $this->getStringFile($merchant_id);
+//
+//        try {
+//            $route = new BusRoute;
+//            $route_details = $route->getRoute($request, $user);
+//            $arr_data = $route_details->toArray();
+//
+//            $min_pick_distance = min(array_column($arr_data, 'pickup_distance'));
+//            $min_drop_distance = min(array_column($arr_data, 'drop_distance'));
+//
+//            $arr_stop_points =  $route_details->map(function ($stop_point) use ($min_pick_distance, $min_drop_distance) {
+//                return [
+//                    'id' => $stop_point->id,
+//                    'name' => isset($stop_point->LanguageBusStop[0]) ? $stop_point->LanguageBusStop[0]->name : "",
+//                    'is_it_pickup_point' => $min_pick_distance == $stop_point->pickup_distance ? true : false,
+//                    'is_it_drop_point' => $min_drop_distance == $stop_point->drop_distance ? true : false,
+//                    'stop_latitude' => $stop_point->start_latitude,
+//                    'stop_longitude' => $stop_point->start_longitude,
+//                ];
+//            })->toArray();
+//
+//            $return = [
+//                'route_id' => $request->route_id,
+//                'stop_points' => $arr_stop_points
+//            ];
+//        } catch (\Throwable $th) {
+//            return $this->failedResponse($th->getMessage());
+//        }
+//        return $this->successResponse(trans("$string_file.data_found"), $return);
+//    }
+
+
+//    public function getRouteDetails(Request $request)
+//    {
+//        $validator = Validator::make($request->all(), [
+//            "segment_id" => 'required|exists:segments,id',
+//            "service_type_id" => 'required|exists:service_types,id',
+//            "bus_route_id" => 'required|integer',
+//            "latitude" => 'required|string',
+//            "longitude" => 'required|string',
+//            "drop_latitude" => 'required|string',
+//            "drop_longitude" => 'required|string',
+//        ]);
+//        if ($validator->fails()) {
+//            $errors = $validator->messages()->all();
+//            return $this->failedResponse($errors[0]);
+//        }
+//        $service_type = ServiceType::find($request->service_type_id);
+//        $request->merge(["service_types_type" => $service_type->type]);
+//        $validator = Validator::make($request->all(), [
+//            "booking_date" => 'required_if:service_types_type,2|date|date_format:Y-m-d|after_or_equal:'.date('Y-m-d'), // if service type is intercity
+//        ],['booking_date.required_if' => "Booking date is required"]);
+//        if ($validator->fails()) {
+//            $errors = $validator->messages()->all();
+//            return $this->failedResponse($errors[0]);
+//        }
+//        $user = $request->user('api');
+//        $merchant = $user->Merchant;
+//        $merchant_id = $merchant->id;
+//        $string_file = $this->getStringFile($merchant_id);
+//        try {
+//            $bus_route = BusRoute::find($request->bus_route_id);
+//            $route = new BusRoute;
+//            $route_details = $route->getRoute($request, $user);
+//            $arr_data = $route_details->toArray();
+//
+//            $min_pick_distance = min(array_column($arr_data, 'pickup_distance'));
+//            $min_drop_distance = min(array_column($arr_data, 'drop_distance'));
+//
+//            $arr_stop_points =  $route_details->map(function ($stop_point) use ($min_pick_distance, $min_drop_distance) {
+//                return [
+//                    'id' => $stop_point->id,
+//                    'name' => isset($stop_point->LanguageBusStop[0]) ? $stop_point->LanguageBusStop[0]->name : "",
+//                    'is_it_pickup_point' => $min_pick_distance == $stop_point->pickup_distance ? true : false,
+//                    'is_it_drop_point' => $min_drop_distance == $stop_point->drop_distance ? true : false,
+//                    'stop_latitude' => $stop_point->start_latitude,
+//                    'stop_longitude' => $stop_point->start_longitude,
+//                ];
+//            })->toArray();
+//
+//            $return = [
+//                'bus_route' => array(
+//                    'id' => $bus_route->id,
+//                    'route_title' => $bus_route->Name
+//                ),
+//                'stop_points' => $arr_stop_points
+//            ];
+//        } catch (\Throwable $th) {
+//            return $this->failedResponse($th->getMessage());
+//        }
+//        return $this->successResponse(trans("$string_file.data_found"), $return);
+//    }

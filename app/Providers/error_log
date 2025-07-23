@@ -1,0 +1,8 @@
+[07-Mar-2024 03:05:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Providers/BroadcastServiceProvider.php on line 8
+[08-Mar-2024 07:53:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/msprojectsappori/public_html/multi-service-v3/app/Providers/AppServiceProvider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/msprojectsappori/public_html/multi-service-v3/app/Providers/AppServiceProvider.php on line 9
